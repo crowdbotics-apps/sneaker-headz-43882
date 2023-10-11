@@ -23,23 +23,23 @@ const ScreenComponent = () => {
     setImages([]);
   };
 
-  return <SafeAreaView style={_styles.awftSYAq}>
+  return <SafeAreaView style={_styles.bngVLoaf}>
       <ScrollView>
         <Text>Title</Text>
-        <TextInput style={_styles.zXHHPGXy} onChangeText={text => setTitle(text)} value={title} />
+        <TextInput style={_styles.tXHyucVE} onChangeText={text => setTitle(text)} value={title} />
 
         <Text>Description</Text>
-        <TextInput style={_styles.yuPlNZCE} onChangeText={text => setDescription(text)} value={description} multiline />
+        <TextInput style={_styles.RqaFcINr} onChangeText={text => setDescription(text)} value={description} multiline />
 
         <Text>Content</Text>
-        <TextInput style={_styles.VCSyBRWa} onChangeText={text => setContent(text)} value={content} multiline />
+        <TextInput style={_styles.pwRRbBrl} onChangeText={text => setContent(text)} value={content} multiline />
 
         <Button title="Upload Image" onPress={handleUploadImage} />
 
-        {images.map((image, index) => <View key={index} style={_styles.uVzqrvws}>
+        {images.map((image, index) => <View key={index} style={_styles.vAOHwrQZ}>
             <Image source={{
           uri: image
-        }} style={_styles.sKFHnwNq} />
+        }} style={_styles.yOSGsJqk} />
             <Button title="Remove" onPress={() => handleRemoveImage(index)} />
           </View>)}
 
@@ -52,34 +52,34 @@ const ScreenComponent = () => {
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  awftSYAq: {
+  bngVLoaf: {
     flex: 1,
     padding: 20
   },
-  zXHHPGXy: {
+  tXHyucVE: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
     marginBottom: 20
   },
-  yuPlNZCE: {
+  RqaFcINr: {
     height: 100,
     borderColor: "gray",
     borderWidth: 1,
     marginBottom: 20
   },
-  VCSyBRWa: {
+  pwRRbBrl: {
     height: 100,
     borderColor: "gray",
     borderWidth: 1,
     marginBottom: 20
   },
-  uVzqrvws: {
+  vAOHwrQZ: {
     flexDirection: "row",
     alignItems: "center",
     marginBottom: 20
   },
-  sKFHnwNq: {
+  yOSGsJqk: {
     width: 100,
     height: 100,
     marginRight: 20
