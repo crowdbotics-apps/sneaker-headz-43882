@@ -12,26 +12,26 @@ const sneakersData = [{
 ];
 
 const Screen = () => {
-  return <SafeAreaView style={_styles.AOGGTUTz}>
-      <View style={_styles.TVXnwJGw}>
+  return <SafeAreaView style={_styles.AkKGopCb}>
+      <View style={_styles.tLXXoEhi}>
         <Button title="My Favorite" onPress={() => {}} />
-        <TextInput placeholder="Search" style={_styles.WKcvLvWM} />
+        <TextInput placeholder="Search" style={_styles.nvmEhLCg} />
         <Text>Display types</Text>
-        <TextInput placeholder="Type 1" style={_styles.RIRywuyc} />
-        <TextInput placeholder="Type n" style={_styles.VQfbFhzn} />
+        <TextInput placeholder="Type 1" style={_styles.lClpdnWU} />
+        <TextInput placeholder="Type n" style={_styles.ORIhUamd} />
         <Text>Set price range</Text>
-        <TextInput placeholder="From" style={_styles.empEOJas} />
-        <TextInput placeholder="To" style={_styles.xamtfsix} />
+        <TextInput placeholder="From" style={_styles.fWGBJHIj} />
+        <TextInput placeholder="To" style={_styles.spXmCnOU} />
         <Text>Set sneaker size</Text>
-        <TextInput placeholder="From" style={_styles.ZObhCqIa} />
-        <TextInput placeholder="To" style={_styles.IlBvOjmB} />
+        <TextInput placeholder="From" style={_styles.yPUFyEzs} />
+        <TextInput placeholder="To" style={_styles.uNkDjDIP} />
       </View>
       <FlatList data={sneakersData} keyExtractor={item => item.id} renderItem={({
       item
-    }) => <View style={_styles.OIgdhbIv}>
+    }) => <View style={_styles.ShOkcdQV}>
             <Image source={{
         uri: item.image
-      }} style={_styles.DeGVVaZd} />
+      }} style={_styles.ghoXgjqo} />
             <Text>{item.name}</Text>
             <Text>{item.type}</Text>
             <Text>{item.description}</Text>
@@ -44,52 +44,52 @@ const Screen = () => {
 export default Screen;
 
 const _styles = StyleSheet.create({
-  AOGGTUTz: {
+  AkKGopCb: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  TVXnwJGw: {
+  tLXXoEhi: {
     padding: 20
   },
-  WKcvLvWM: {
+  nvmEhLCg: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  RIRywuyc: {
+  lClpdnWU: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  VQfbFhzn: {
+  ORIhUamd: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  empEOJas: {
+  fWGBJHIj: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  xamtfsix: {
+  spXmCnOU: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  ZObhCqIa: {
+  yPUFyEzs: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  IlBvOjmB: {
+  uNkDjDIP: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  OIgdhbIv: {
+  ShOkcdQV: {
     padding: 20
   },
-  DeGVVaZd: {
+  ghoXgjqo: {
     width: 100,
     height: 100
   }
