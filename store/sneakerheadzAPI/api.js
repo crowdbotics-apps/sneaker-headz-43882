@@ -14,6 +14,15 @@ function api_v1_login_create(payload) {
 function api_v1_signup_create(payload) {
   return sneakerheadzAPI.post(`/api/v1/signup/`, payload)
 }
+function modules_camera_photos_user_list(payload) {
+  return sneakerheadzAPI.get(`/modules/camera/photos/user/`)
+}
+function modules_camera_photos_user_retrieve(payload) {
+  return sneakerheadzAPI.get(`/modules/camera/photos/user/${payload.id}/`)
+}
+function modules_camera_upload_image_create(payload) {
+  return sneakerheadzAPI.post(`/modules/camera/upload_image/`)
+}
 function rest_auth_login_create(payload) {
   return sneakerheadzAPI.post(`/rest-auth/login/`, payload)
 }
@@ -51,6 +60,9 @@ export const apiService = {
   api_docs_schema_retrieve,
   api_v1_login_create,
   api_v1_signup_create,
+  modules_camera_photos_user_list,
+  modules_camera_photos_user_retrieve,
+  modules_camera_upload_image_create,
   rest_auth_login_create,
   rest_auth_logout_create,
   rest_auth_password_change_create,
