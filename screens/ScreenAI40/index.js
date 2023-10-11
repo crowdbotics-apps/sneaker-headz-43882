@@ -13,29 +13,29 @@ const dummyData = [{
 ];
 
 const ScreenComponent = () => {
-  return <SafeAreaView style={_styles.oTjmliif}>
-      <View style={_styles.AENmcoEY}>
-        <Text style={_styles.tDXJAiQQ}>Section 1:</Text>
-        <TextInput placeholder="Group name" style={_styles.HQAFgwsQ} />
-        <TextInput placeholder="Group description" style={_styles.MZfNBIBH} />
+  return <SafeAreaView style={_styles.VjikinCB}>
+      <View style={_styles.LLyCTnLN}>
+        <Text style={_styles.RBVZCRtl}>Section 1:</Text>
+        <TextInput placeholder="Group name" style={_styles.OwtBnfKu} />
+        <TextInput placeholder="Group description" style={_styles.WEuRWXvH} />
 
-        <Text style={_styles.wYAyTVLL}>Section 2:</Text>
-        <TextInput placeholder="Add people" style={_styles.KOINfMBR} />
+        <Text style={_styles.AkdyARiG}>Section 2:</Text>
+        <TextInput placeholder="Add people" style={_styles.EcOjPDSf} />
         <FlatList data={dummyData} keyExtractor={item => item.id} renderItem={({
         item
-      }) => <View style={_styles.ZVJSnYAI}>
+      }) => <View style={_styles.CjtTCYHj}>
               <Image source={{
           uri: item.image
-        }} style={_styles.CaSQrSpX} />
-              <Text style={_styles.dsrSuvIQ}>{item.name}</Text>
+        }} style={_styles.GNBqvNiq} />
+              <Text style={_styles.GqLPLGoc}>{item.name}</Text>
             </View>} />
-        <View style={_styles.jYtZuyat}>
+        <View style={_styles.hXrVBuri}>
           <Button title="Add Users" onPress={() => {}} />
           <Button title="Remove Users" onPress={() => {}} />
         </View>
 
-        <Text style={_styles.uvxZenRW}>Section 3:</Text>
-        <View style={_styles.wEwhIcaO}>
+        <Text style={_styles.QfHIsVzp}>Section 3:</Text>
+        <View style={_styles.dchJGdGF}>
           <Button title="Create Group" onPress={() => {}} />
           <Button title="Cancel" onPress={() => {}} />
         </View>
@@ -46,67 +46,67 @@ const ScreenComponent = () => {
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  oTjmliif: {
+  VjikinCB: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  AENmcoEY: {
+  LLyCTnLN: {
     padding: 20
   },
-  tDXJAiQQ: {
+  RBVZCRtl: {
     fontSize: 20,
     fontWeight: "bold"
   },
-  HQAFgwsQ: {
+  OwtBnfKu: {
     borderWidth: 1,
     borderColor: "#000",
     borderRadius: 5,
     padding: 10,
     marginTop: 10
   },
-  MZfNBIBH: {
+  WEuRWXvH: {
     borderWidth: 1,
     borderColor: "#000",
     borderRadius: 5,
     padding: 10,
     marginTop: 10
   },
-  wYAyTVLL: {
+  AkdyARiG: {
     fontSize: 20,
     fontWeight: "bold",
     marginTop: 20
   },
-  KOINfMBR: {
+  EcOjPDSf: {
     borderWidth: 1,
     borderColor: "#000",
     borderRadius: 5,
     padding: 10,
     marginTop: 10
   },
-  ZVJSnYAI: {
+  CjtTCYHj: {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 10
   },
-  CaSQrSpX: {
+  GNBqvNiq: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  dsrSuvIQ: {
+  GqLPLGoc: {
     marginLeft: 10
   },
-  jYtZuyat: {
+  hXrVBuri: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 20
   },
-  uvxZenRW: {
+  QfHIsVzp: {
     fontSize: 20,
     fontWeight: "bold",
     marginTop: 20
   },
-  wEwhIcaO: {
+  dchJGdGF: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 20
